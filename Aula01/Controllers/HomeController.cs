@@ -8,11 +8,21 @@ namespace Aula01.Controllers
     {
         public IActionResult Index()
         {
+            //CRIANDO PROPRIEDADES DINÂMICAS
+            ViewBag.UsuarioLogado = "Cidade";
+            ViewBag.DataAcesso = DateTime.Now.ToLongDateString();
+            ViewBag.NivelAcesso = "Administrador";
+
             return View();
         }
 
         public IActionResult Privacy()
         {
+
+            ViewBag.Nome = "Neymatogrosso";
+            ViewBag.Endereço = "Rua Guaipa";
+            ViewBag.Email = "Neymatogrosso@gmail.com";
+            
             return View();
         }
 
